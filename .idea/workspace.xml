@@ -2,29 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20ca38ab-b2d2-4fb3-9281-3d0d1300b428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Boat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/BoatCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navigator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Owner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/myBoats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/mqttController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/door.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/paho-mqtt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/paho-mqtt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/M2M.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/M2M.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/boat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/boat.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/door.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Boat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BoatCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Owner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/myBoats.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +64,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WU3Arbeidskrav1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -65,11 +72,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mathi\WebstormProjects\ArbeidskravM2M\frontend" />
+      <recent name="C:\Users\mathi\WebstormProjects\ArbeidskravM2M\frontend\src\components" />
+      <recent name="C:\Users\mathi\WebstormProjects\ArbeidskravM2M\frontend\src" />
       <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\frontend\public\boats" />
       <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\frontend\src" />
-      <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\frontend" />
-      <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\backend" />
-      <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\routes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mathi\WebstormProjects\ArbeidskravM2M\frontend" />
     </key>
   </component>
   <component name="RunManager" selected="npm.devstart">
@@ -110,6 +120,10 @@
       <workItem from="1605607128293" duration="4691000" />
       <workItem from="1605687574447" duration="23887000" />
       <workItem from="1605780639213" duration="956000" />
+      <workItem from="1605781863143" duration="8767000" />
+      <workItem from="1605807496900" duration="10381000" />
+      <workItem from="1605863632997" duration="611000" />
+      <workItem from="1605950125918" duration="5520000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604305661439</created>
@@ -145,10 +159,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="613" y="305" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605710685425" />
-    <state x="144" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605706906250">
+    <state x="144" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605781913173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="144" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605706906250" />
+    <state x="144" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605781913173" />
     <state x="198" y="22" key="CommitChangelistDialog2" timestamp="1605687915158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -157,26 +171,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="678" y="217" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605695585376" />
-    <state width="1894" height="268" key="GridCell.Tab.0.bottom" timestamp="1605689695835">
+    <state width="1894" height="268" key="GridCell.Tab.0.bottom" timestamp="1605807262661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1894" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604875084012" />
-    <state width="1894" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605689695835" />
-    <state width="1894" height="268" key="GridCell.Tab.0.center" timestamp="1605689695834">
+    <state width="1894" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605807262661" />
+    <state width="1894" height="268" key="GridCell.Tab.0.center" timestamp="1605807262661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1894" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604875084012" />
-    <state width="1894" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605689695834" />
-    <state width="1894" height="268" key="GridCell.Tab.0.left" timestamp="1605689695834">
+    <state width="1894" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605807262661" />
+    <state width="1894" height="268" key="GridCell.Tab.0.left" timestamp="1605807262661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1894" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604875084012" />
-    <state width="1894" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605689695834" />
-    <state width="1894" height="268" key="GridCell.Tab.0.right" timestamp="1605689695834">
+    <state width="1894" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605807262661" />
+    <state width="1894" height="268" key="GridCell.Tab.0.right" timestamp="1605807262661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1894" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604875084012" />
-    <state width="1894" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605689695834" />
+    <state width="1894" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605807262661" />
     <state x="381" y="78" key="SettingsEditor" timestamp="1604305823428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -189,5 +203,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="709" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604859680682" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1605810804136">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605810804136" />
   </component>
 </project>
