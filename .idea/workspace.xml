@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20ca38ab-b2d2-4fb3-9281-3d0d1300b428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Boat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/BoatCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navigator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Owner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/myBoats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/mqttController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/boat.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/boat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +47,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\backend\controllers" />
       <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\frontend\public\boats" />
       <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\frontend\src" />
       <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\frontend" />
       <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\backend" />
-      <recent name="C:\Users\mathi\WebstormProjects\M2MBackend\routes" />
     </key>
   </component>
   <component name="RunManager" selected="npm.devstart">
@@ -109,7 +91,19 @@
       <workItem from="1605520693576" duration="8619000" />
       <workItem from="1605607128293" duration="4691000" />
       <workItem from="1605687574447" duration="23887000" />
-      <workItem from="1605780639213" duration="956000" />
+      <workItem from="1605780639213" duration="1101000" />
+      <workItem from="1605782345530" duration="36000" />
+      <workItem from="1605782470628" duration="30000" />
+      <workItem from="1605809179840" duration="667000" />
+      <workItem from="1605810702036" duration="3091000" />
+      <workItem from="1605958295866" duration="9000" />
+      <workItem from="1605958323237" duration="4000" />
+      <workItem from="1605958660306" duration="21000" />
+      <workItem from="1605959028205" duration="620000" />
+      <workItem from="1605978950033" duration="866000" />
+      <workItem from="1605980629411" duration="89000" />
+      <workItem from="1606047609438" duration="2575000" />
+      <workItem from="1606077565312" duration="2274000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604305661439</created>
@@ -125,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605687919224</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="stuff">
+      <created>1605781624248</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605781624248</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +135,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="stuff" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603834675220">
@@ -149,13 +151,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="144" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605706906250" />
-    <state x="198" y="22" key="CommitChangelistDialog2" timestamp="1605687915158">
+    <state x="198" y="22" key="CommitChangelistDialog2" timestamp="1605781623531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="198" y="22" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605687915158" />
-    <state x="678" y="217" key="FileChooserDialogImpl" timestamp="1605695585376">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="198" y="22" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605781623531" />
+    <state x="-1242" y="217" key="FileChooserDialogImpl" timestamp="1605980707843">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1242" y="217" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605980707843" />
     <state x="678" y="217" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605695585376" />
     <state width="1894" height="268" key="GridCell.Tab.0.bottom" timestamp="1605689695835">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -181,10 +184,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="381" y="78" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604305823428" />
-    <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1605688165703">
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1605781626729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605688165703" />
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605781626729" />
     <state x="709" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604859680682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
