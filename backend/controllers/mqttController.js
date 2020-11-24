@@ -16,7 +16,6 @@ client.on('message', function (topic, message, packet) {
     const boatId = topicList[1]
     const type = topicList[2]
     let payload = message.toString()
-    console.log(payload)
 
     switch (type) {
         case "GPSNMEA":
@@ -36,18 +35,19 @@ const updateGeo = (payload) => {
     const updateObject = convertToLatLong(payload)
 
     BoatSchema.findOneAndUpdate(
-        {boatId: boatId},
+        {boatId: 0},
         {$set: updateObject},
         {upsert: true, useFindAndModify: false, new: true}
     ).then(res => console.log(res))
 }
 
+
 const convertToLatLong = (nmea) => {
     const list = nmea.split(',')
     let lat = list[0]
-    lat = Number(lat.slice(0, 2)) + (Number(lat.slice(2, 9)) / 60)
+    lat = (Number(lat.slice(0, 2)) + (Number(lat.slice(2, 9)) / 60)).toFixed(4)
     let long = list[2]
-    long = (Number(long.slice(0, 3)) + (Number(long.slice(3, 10)) / 60))
+    long = ((Number(long.slice(0, 3)) + (Number(long.slice(3, 10)) / 60))).toFixed(4)
 
     return ({latitude: lat, longitude: long})
 }
@@ -59,6 +59,11 @@ exports.setStatus = function (req, res) {
         publishMqtt("boats/0/lock-status", "close", true)
     }
 };
+
+exports.setGPSFrequency = function (req, res) {
+    publishMqtt("boats/0/time-between-gps-updates", req.body.gpsFrequency.toString(), true)
+}
+
 
 
 let messageObject = {

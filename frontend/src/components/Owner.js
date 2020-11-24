@@ -31,7 +31,7 @@ export const Owner = (props) => {
         <>
             <Boat boats={props.boats}/>
 
-            <Button variant="primary" onClick={() => handleShow()}> Add boat </Button>
+            <Button variant="primary" onClick={() => handleShow()}> Legg til båt </Button>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -41,23 +41,26 @@ export const Owner = (props) => {
 
                     <Form>
                         <Form.Group controlId="formBasicEmail">
-                            <Form.Control value={name} onChange={e => setName(e.target.value)}
-                                          placeholder="Enter Name"/>
-                            <Form.Control value={description} onChange={e => setDescription(e.target.value)}
-                                          placeholder="Enter Description"/>
-                            <Form.Control value={imagePath} onChange={e => setImagePath(e.target.value)}
-                                          placeholder="Enter path to image"/>
-                            <Form.Control value={model} onChange={e => setModel(e.target.value)}
-                                          placeholder="Enter boat model"/>
+                            <Form.Label>Navn</Form.Label>
+                            <Form.Control value={name} onChange={e => setName(e.target.value)}/>
+
+                            <Form.Label>Beskrivelse</Form.Label>
+                            <Form.Control value={description} onChange={e => setDescription(e.target.value)}/>
+
+                            <Form.Label>Bilde</Form.Label>
+                            <Form.Control value={imagePath} onChange={e => setImagePath(e.target.value)}/>
+
+                            <Form.Label>Modell</Form.Label>
+                            <Form.Control value={model} onChange={e => setModel(e.target.value)}/>
                         </Form.Group>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
-                        Close
+                        Lukk
                     </Button>
                     <Button variant="primary" onClick={handleForm}>
-                        Save Changes
+                        Legg til båt
                     </Button>
                 </Modal.Footer>
             </Modal>

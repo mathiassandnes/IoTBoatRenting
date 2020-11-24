@@ -7,13 +7,9 @@ import {MyMapComponent} from "./Map";
 import {BoatCard} from "./BoatCard";
 import { useHistory } from "react-router-dom";
 
-
 export const Boat = (props) => {
-
     const axios = require('axios');
 
-
-    const boats = props.boats
 
     const [show, setShow] = useState(false)
     const [description, setDescription] = useState("")
@@ -23,18 +19,15 @@ export const Boat = (props) => {
     const [lat, setLat] = useState("")
     const [index, setIndex] = useState(0)
 
-    /////////////////////////////////////////////////////
-
-    const [data, setData] = useState(false);
-
     useEffect(() => {
         axios.get('http://localhost:5000/boat')
-            .then(res =>
-                setData(res.data[0])
+            .then(res => {
+                    setLat(res.data[0].latitude)
+                    setLng(res.data[0].longitude)
+                }
             ).catch(error => console.log(error))
-    }, []);
 
-    //////////////////////////////////////////////////////
+    }, []);
 
     const handleClose = () => setShow(false)
     const handleShow = (boat, index) => {
@@ -42,23 +35,8 @@ export const Boat = (props) => {
         setDescription(boat.description)
         setName(boat.name)
         setModel(boat.model)
-        setLat(boat.latitude)
-        setLng(boat.longitude)
         setIndex(index)
     }
-
-    const handleForm = () => {
-
-        if (index === boats.length) {
-            boats.push({
-                name
-            })
-        } else {
-            boats[index].name = name
-        }
-        handleClose()
-    }
-
 
     const history = useHistory();
 

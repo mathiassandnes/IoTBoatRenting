@@ -18,9 +18,9 @@ export const Navigator = (props) => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link className="text-light" as={Link} to="/">Home</Nav.Link>
+                        <Nav.Link className="text-light" as={Link} to="/">Hjem</Nav.Link>
                         <Nav.Link className="text-light" as={Link} to="/admin">Admin</Nav.Link>
-                        <Nav.Link className="text-light" as={Link} to="/owner">Owner</Nav.Link>
+                        <Nav.Link className="text-light" as={Link} to="/owner">For Eiere</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

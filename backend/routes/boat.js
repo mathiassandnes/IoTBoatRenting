@@ -7,5 +7,6 @@ const mqttController = require('../controllers/mqttController');
 router.get('/boat', boatController.getData);
 
 router.post('/status', mqttController.setStatus);
+router.post('/gpsFrequency', mqttController.setGPSFrequency);
 
 module.exports = router;

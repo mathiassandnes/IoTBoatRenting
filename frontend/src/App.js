@@ -10,17 +10,17 @@ function App() {
             'image': 'https://seacastle.se/wp-content/uploads/2016/12/DSC_0142.jpg',
             'model': 'Bella 21 b-6',
             'id': 0,
-            'latitude': 0,
-            'longitude': 0,
+            'latitude': 59.9079,
+            'longitude': 10.7255,
         },
         {
             'name': 'Rib',
             'description': 'Lorem Lorem Lorem',
-            'image': 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F7%2F71%2FZodiac_on_the_beach.jpg%2F1200px-Zodiac_on_the_beach.jpg&f=1&nofb=1',
+            'image': 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.santorini-yachts.com%2Fwp-content%2Fuploads%2F2018%2F01%2Fscorpion-speedboat-cruise.jpg&f=1&nofb=1',
             'model': 'Super 55 RIB',
             'id': 1,
-            'latitude': 1,
-            'longitude': 1,
+            'latitude': 59.8745,
+            'longitude': 10.7706,
         },
 
     ]
