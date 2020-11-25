@@ -1,8 +1,23 @@
 import {BrowserRouter} from "react-router-dom";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Navigator} from "./components/Navigator";
 
+
 function App() {
+
+    const [state, setState] = useState('tilkoblet')
+
+    useEffect(() => {
+        const axios = require('axios')
+
+        axios.get('http://localhost:5000/state')
+            .then(res => {
+                    setState(res.data)
+                }
+            ).catch(error => console.log(error))
+
+    }, []);
+
     const boats = [
         {
             'name': 'Fin liten daycruiser',
@@ -12,6 +27,7 @@ function App() {
             'id': 0,
             'latitude': 59.9079,
             'longitude': 10.7255,
+            'status': state
         },
         {
             'name': 'Rib',
@@ -21,6 +37,7 @@ function App() {
             'id': 1,
             'latitude': 59.8745,
             'longitude': 10.7706,
+            'status': 'tilkoblet'
         },
 
     ]

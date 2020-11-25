@@ -20,6 +20,7 @@ export const Admin = (props) => {
             <thead>
             <tr>
                 <th>Båt ID</th>
+                <th>Tilstand</th>
                 <th>Navn</th>
                 <th>Beskrivelse</th>
                 <th>Model</th>
@@ -35,6 +36,7 @@ export const Admin = (props) => {
             {props.boats.map(boat =>
                 <tr>
                     <td>{boat.id.toString()}</td>
+                    <td>{boat.status}</td>
                     <td>{boat.name}</td>
                     <td>{boat.description}</td>
                     <td>{boat.model}</td>

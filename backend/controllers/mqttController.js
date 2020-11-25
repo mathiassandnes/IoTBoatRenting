@@ -2,12 +2,15 @@ const mqtt = require('mqtt');
 const client = mqtt.connect("mqtt://mqtt.eclipse.org", {clientId: "keknode"});
 const BoatSchema = require('../models/boat');
 
+let boatConnected = "ikke tilkoblet"
+
 
 client.on("connect", function () {
     console.log("connected")
     client.subscribe("boats/0/GPSNMEA")
     client.subscribe("boats/0/lock-status/ack")
     client.subscribe("boats/0/time-between-gps-updates/ack")
+    client.subscribe("boats/0/connected")
 })
 
 client.on('message', function (topic, message, packet) {
@@ -27,6 +30,8 @@ client.on('message', function (topic, message, packet) {
         case "time-between-gps-updates":
             messageObject["boats/0/time-between-gps-updates/ack"] = payload;
             break;
+        case "connected":
+            boatConnected = payload === "true" ? "tilkoblet" : "ikke tilkoblet"
     }
 
 });
@@ -40,7 +45,6 @@ const updateGeo = (payload) => {
         {upsert: true, useFindAndModify: false, new: true}
     ).then(res => console.log(res))
 }
-
 
 const convertToLatLong = (nmea) => {
     const list = nmea.split(',')
@@ -63,6 +67,12 @@ exports.setStatus = function (req, res) {
 exports.setGPSFrequency = function (req, res) {
     publishMqtt("boats/0/time-between-gps-updates", req.body.gpsFrequency.toString(), true)
 }
+
+
+exports.getState = function (req, res) {
+    res.send(boatConnected)
+}
+
 
 
 
