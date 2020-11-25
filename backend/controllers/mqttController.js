@@ -1,8 +1,14 @@
+
 const mqtt = require('mqtt');
+const databaseController = require("./databaseController");
 const client = mqtt.connect("mqtt://mqtt.eclipse.org", {clientId: "keknode"});
-const BoatSchema = require('../models/boat');
 
 let boatConnected = "ikke tilkoblet"
+
+let messageObject = {
+    "boats/0/lock-status/ack": null,
+    "boats/0/time-between-gps-updates/ack": null,
+}
 
 
 client.on("connect", function () {
@@ -22,7 +28,7 @@ client.on('message', function (topic, message, packet) {
 
     switch (type) {
         case "GPSNMEA":
-            updateGeo(payload);
+            databaseController.updateGeo(payload);
             break;
         case "lock-status":
             messageObject["boats/0/lock-status/ack"] = payload;
@@ -36,25 +42,7 @@ client.on('message', function (topic, message, packet) {
 
 });
 
-const updateGeo = (payload) => {
-    const updateObject = convertToLatLong(payload)
 
-    BoatSchema.findOneAndUpdate(
-        {boatId: 0},
-        {$set: updateObject},
-        {upsert: true, useFindAndModify: false, new: true}
-    ).then(res => console.log(res))
-}
-
-const convertToLatLong = (nmea) => {
-    const list = nmea.split(',')
-    let lat = list[0]
-    lat = (Number(lat.slice(0, 2)) + (Number(lat.slice(2, 9)) / 60)).toFixed(4)
-    let long = list[2]
-    long = ((Number(long.slice(0, 3)) + (Number(long.slice(3, 10)) / 60))).toFixed(4)
-
-    return ({latitude: lat, longitude: long})
-}
 exports.setStatus = function (req, res) {
     const open = req.body.open
     if (open) {
@@ -71,14 +59,6 @@ exports.setGPSFrequency = function (req, res) {
 
 exports.getState = function (req, res) {
     res.send(boatConnected)
-}
-
-
-
-
-let messageObject = {
-    "boats/0/lock-status/ack": null,
-    "boats/0/time-between-gps-updates/ack": null,
 }
 
 const publishMqtt = (topic, payload, withAck = false) => {

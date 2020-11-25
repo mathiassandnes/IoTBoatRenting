@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const boatController = require('../controllers/controller');
+const databaseController = require('../controllers/databaseController');
 const mqttController = require('../controllers/mqttController');
 
-router.get('/boat', boatController.getData);
+router.get('/boat', databaseController.getData);
 router.get('/state', mqttController.getState);
 
 router.post('/status', mqttController.setStatus);

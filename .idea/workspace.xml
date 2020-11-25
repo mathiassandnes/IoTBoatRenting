@@ -19,14 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20ca38ab-b2d2-4fb3-9281-3d0d1300b428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="20ca38ab-b2d2-4fb3-9281-3d0d1300b428" name="Default Changelist" comment="fixed ack with mqtt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/databaseController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/mqttController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/mqttController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/boat.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/boat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/myBoats.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/myBoats.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.13.1" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../WU3Arbeidskrav1" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -131,6 +130,7 @@
       <workItem from="1606077565312" duration="2274000" />
       <workItem from="1606210042434" duration="9570000" />
       <workItem from="1606296443621" duration="3553000" />
+      <workItem from="1606320744525" duration="1837000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604305661439</created>
@@ -236,10 +236,11 @@
     </state>
     <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605781626729" />
     <state x="2372" y="211" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1606147356406" />
-    <state x="709" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606247023021">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2629" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606314805350">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="709" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606247023021" />
+    <state x="2629" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606314805350" />
     <state x="2452" y="237" key="run.anything.popup" timestamp="1606212268219">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

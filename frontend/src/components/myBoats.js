@@ -17,11 +17,9 @@ export const MyBoats = (props) => {
             </Card.Body>
         </Card>
         <Button variant="primary"
-                onClick={() => axios.post('http://localhost:5000/status', {open: true}).catch(error => console.log(error))}> open
-            lock </Button>
+                onClick={() => axios.post('http://localhost:5000/status', {open: true}).catch(error => console.log(error))}> Åpne båt </Button>
         <Button variant="primary"
-                onClick={() => axios.post('http://localhost:5000/status', {open: false}).catch(error => console.log(error))}> close
-            lock </Button>
+                onClick={() => axios.post('http://localhost:5000/status', {open: false}).catch(error => console.log(error))}> Lås båt </Button>
 
     </>)
 }
